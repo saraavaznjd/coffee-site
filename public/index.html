@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fa-Ir" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/app.css">
+</head>
+
+<body class="font-IranSans">
+
+    <header class="">
+        <div class="container">
+            <nav class="h-16 lg:h-28 flex justify-between items-center text-[#141414]">
+                <div class="flex gap-4 xl:gap-8 items-center">
+                    <a href="#"><img class="w-14 xl:w-full" src="coffee-bg/logo-Black.png" alt="logo"></a>
+                    <svg class="lg:hidden" fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 56 56" xml:space="preserve">
+                        <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2
+	h24c1.104,0,2,0.896,2,2S41.104,41,40,41z M40,30H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,30,40,30z
+	 M40,19H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,19,40,19z" />
+                    </svg>
+                    <ul
+                        class="flex flex-col absolute top-16 -right-0 w-1/2 h-screen bg-white font-bold text-sm transition-all duration-300 z-50 lg:flex-row lg:static lg:w-full lg:h-auto lg:items-center lg:gap-2 xl:gap-6">
+                        <li class="reletive group p-2 hover:bg-neutral-100 lg:hover:bg-transparent lg:py-4">
+                            <a class="flex justify-between items-center lg:justify-center" href="#">محصولات 
+                                <svg
+                                    width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L12 15L17 10" stroke="#aaa" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="opacity-0 invisible h-0 group-hover:opacity-100 group-hover:visible group-hover:h-auto -mx-2 lg:flex lg:h-auto lg:absolute lg:top-20 lg:p-4 lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 lg:ring-zinc-200  transition-all duration-300 ease-in-out z-50">
+                                <li class="px-2 lg:border-l">
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">قهوه</a>
+                                    <ul class="font-normal text-zinc-500">
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">
+                                                قهوه ترک
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">
+                                                قهوه اسپرسو
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">
+                                                قهوه دمی
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">
+                                                قهوه فوری
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">
+                                                هورکا (کافه، رستوران، هتل)
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="border-l pl-2 pr-2">
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">ابزارهای تهیه قهوه</a>
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">دستگاه‌های دم‌آوری</a>
+                                    <ul class="font-normal text-zinc-500">
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">اسپرسوساز خانگی</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">فرنچ پرس</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">فرنچ پرس</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">لوازم جانبی</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="border-l pl-2 pr-2">
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">ابزارهای سرو قهوه</a>
+                                    <ul class="font-normal text-zinc-500">
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">ماگ</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">تراول ماگ</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">فنجان و قهوه خوری</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pl-2 pr-2">
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">خرید شکلات</a>
+                                    <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
+                                        href="#">پودرهای ترکیبی</a>
+                                    <ul class="font-normal text-zinc-500">
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">هات چاکلت</a>
+                                        </li>
+                                        <li
+                                            class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                            <a href="#">چای ماسالا</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a href="#">کاپریو</a>
+                        </li>
+                        <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a href="#">بلاگ تخصصی قهوه</a>
+                        </li>
+                        <li class="reletive group p-2 lg:py-4 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a class="flex items-start justify-between lg:justify-center" href="#">ارتباط با ما
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L12 15L17 10" stroke="#aaa" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <ul
+                                class="font-normal text-zinc-500 opacity-0 invisible h-0 group-hover:opacity-100 group-hover:visible group-hover:h-auto p-4 -mx-2 lg:h-auto lg:absolute lg:top-20 lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 ring-zinc-200 transition-all duration-300 z-50">
+                                <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                    <a href="#">پیگیری سفارش</a>
+                                </li>
+                                <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                    <a href="#">درخواست نمایندگی/عاملیت فروش</a>
+                                </li>
+                                <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                    <a href="#">درخواست همکاری</a>
+                                </li>
+                                <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                    <a href="#">ثبت بازخورد/پیشنهاد/شکایت</a>
+                                </li>
+                                <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
+                                    <a href="#">اشتراک تجربه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a href="#">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a href="#">
+                                شعب قهوه ریو
+                            </a>
+                        </li>
+                        <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
+                            <a href="#">
+                                منو شعب
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="xl:hidden" width="25px" height="25px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                        stroke-width="3" stroke="#000000" fill="none">
+                        <circle cx="32" cy="18.14" r="11.14" />
+                        <path d="M54.55,56.85A22.55,22.55,0,0,0,32,34.3h0A22.55,22.55,0,0,0,9.45,56.85Z" />
+                    </svg>
+                    <a class="font-bold text-sm hidden xl:inline" href="#">ورود / عضویت</a>
+                    <span class="text-2xl font-thin text-gray-400">|</span>
+                    <a href="#">
+                        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 4H5.62563C6.193 4 6.47669 4 6.70214 4.12433C6.79511 4.17561 6.87933 4.24136 6.95162 4.31912C7.12692 4.50769 7.19573 4.7829 7.33333 5.33333L7.51493 6.05972C7.616 6.46402 7.66654 6.66617 7.74455 6.83576C8.01534 7.42449 8.5546 7.84553 9.19144 7.96546C9.37488 8 9.58326 8 10 8V8"
+                                stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M18 17H7.55091C7.40471 17 7.33162 17 7.27616 16.9938C6.68857 16.928 6.28605 16.3695 6.40945 15.7913C6.42109 15.7367 6.44421 15.6674 6.49044 15.5287V15.5287C6.54177 15.3747 6.56743 15.2977 6.59579 15.2298C6.88607 14.5342 7.54277 14.0608 8.29448 14.0054C8.3679 14 8.44906 14 8.61137 14H14"
+                                stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M14.5279 14H10.9743C9.75838 14 9.15042 14 8.68147 13.7246C8.48343 13.6083 8.30689 13.4588 8.15961 13.2825C7.81087 12.8652 7.71092 12.2655 7.51103 11.0662C7.30849 9.85093 7.20722 9.2433 7.44763 8.79324C7.54799 8.60536 7.68722 8.44101 7.85604 8.31113C8.26045 8 8.87646 8 10.1085 8H16.7639C18.2143 8 18.9395 8 19.2326 8.47427C19.5257 8.94854 19.2014 9.59717 18.5528 10.8944L18.1056 11.7889C17.5677 12.8647 17.2987 13.4026 16.8154 13.7013C16.3321 14 15.7307 14 14.5279 14Z"
+                                stroke="#33363F" stroke-width="2" stroke-linecap="round" />
+                            <circle cx="17" cy="20" r="1" fill="#33363F" />
+                            <circle cx="9" cy="20" r="1" fill="#33363F" />
+                        </svg>
+                    </a>
+                    <span class="text-2xl font-thin text-gray-400">|</span>
+                    <a href="#">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="swiper swiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide_content">
+                        <img class="w-full sm:hidden" src="coffee-bg/banner01.jpg" alt="">
+                        <img class="w-full hidden sm:block" src="coffee-bg/banner04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide_content">
+                        <img class="w-full sm:hidden" src="coffee-bg/banner02.jpg" alt="">
+                        <img class="w-full hidden sm:block" src="coffee-bg/banner05.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide_content">
+                        <img class="w-full sm:hidden" src="coffee-bg/banner03.jpg" alt="">
+                        <img class="w-full hidden sm:block" src="coffee-bg/banner06.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1"></div>
+            <div class="swiper-button-prev swiper-button-prev-1"></div>
+            <div class="swiper-button-next swiper-button-next-1"></div>
+        </div>
+    </header>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        const swiper1 = new Swiper('.swiper-1', {
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: '.swiper-pagination-1',
+                paginationClickable: true,
+
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
+            },
+            sliddesPerView: 1,
+            loop: true,
+
+        })
+
+    </script>
+
+</body>
+
+</html>

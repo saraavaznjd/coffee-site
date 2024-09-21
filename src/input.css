@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: IranSans;
+        src: url("../fonts/IRANSans.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "IranSans Black";
+        src: url("../fonts/IRANSans_Black.ttf") format("truetype");
+    }
+}
+
