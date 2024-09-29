@@ -24,6 +24,7 @@ extend: {
   },
   boxShadow: {
     'primary': '0 0 30px 0px rgba(0, 0, 0, 0.1)',
+    'product-shadow': '0 10px 12px -1px rgb(0 0 0 / 0.3), 0 8px 10px -2px rgb(0 0 0 / 0.3)',
   },
   backgroundImage: {
     'turkish-coffee': "url('../coffee-bg/turkish-coffee.jpg')",
