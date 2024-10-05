@@ -17,16 +17,27 @@
             <nav class="h-16 lg:h-28 flex justify-between items-center text-[#141414]">
                 <div class="flex gap-4 xl:gap-8 items-center">
                     <a href="#"><img class="w-14 xl:w-full" src="coffee-bg/logo-Black.png" alt="logo"></a>
-                    <svg class="lg:hidden" fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewBox="0 0 56 56" xml:space="preserve">
+                    <svg class="transition-all duration-300 lg:hidden" id="menu-open" fill="#000000" height="30px"
+                        width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 56 56" xml:space="preserve">
                         <path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M40,41H16c-1.104,0-2-0.896-2-2s0.896-2,2-2
 	h24c1.104,0,2,0.896,2,2S41.104,41,40,41z M40,30H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,30,40,30z
 	 M40,19H16c-1.104,0-2-0.896-2-2s0.896-2,2-2h24c1.104,0,2,0.896,2,2S41.104,19,40,19z" />
                     </svg>
-                    <ul
-                        class="flex flex-col absolute top-16 -right-0 w-1/2 h-screen bg-white font-bold text-sm transition-all duration-300 z-50 lg:flex-row lg:static lg:w-full lg:h-auto lg:items-center lg:gap-2 xl:gap-6">
-                        <li class="reletive group p-2 hover:bg-neutral-100 lg:hover:bg-transparent lg:py-4">
+                    <svg class="transition-all duration-300 hidden lg:hidden" id="menu-close" width="35px" height="35px"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="style=fill">
+                            <g id="close-circle">
+                                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C17.9371 1.25 22.75 6.06294 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12ZM8.46967 8.46967C8.76257 8.17678 9.23744 8.17678 9.53033 8.46967L12 10.9393L14.4697 8.46967C14.7626 8.17678 15.2374 8.17678 15.5303 8.46967C15.8232 8.76257 15.8232 9.23744 15.5303 9.53033L13.0606 12L15.5303 14.4697C15.8232 14.7626 15.8232 15.2374 15.5303 15.5303C15.2374 15.8232 14.7625 15.8232 14.4696 15.5303L12 13.0607L9.53033 15.5303C9.23743 15.8232 8.76256 15.8232 8.46967 15.5303C8.17678 15.2374 8.17678 14.7625 8.46967 14.4696L10.9393 12L8.46967 9.53033C8.17678 9.23743 8.17678 8.76256 8.46967 8.46967Z"
+                                    fill="#000000" />
+                            </g>
+                        </g>
+                    </svg>
+                    <ul id="menu"
+                        class="flex flex-col absolute top-16 bottom-0 -right-[400px] w-1/2 h-full bg-white font-bold text-sm transition-all duration-300 z-50 lg:flex-row lg:static lg:w-full lg:h-auto lg:items-center lg:gap-2 xl:gap-6">
+                        <li id="product-submenu"
+                            class="reletive group p-2 hover:bg-neutral-100 lg:hover:bg-transparent lg:py-4">
                             <a class="flex justify-between items-center lg:justify-center" href="#">محصولات
                                 <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -34,8 +45,8 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </a>
-                            <ul
-                                class="h-0 opacity-0 invisible group-hover:h-auto group-hover:opacity-100 group-hover:visible group-hover:p-4 -mx-2 lg:flex lg:h-auto lg:absolute lg:top-20  lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 lg:ring-zinc-200  transition-all duration-300 z-50">
+                            <ul id="product-submenu-open"
+                                class="h-0 opacity-0 invisible -mx-2 lg:flex lg:h-auto lg:absolute lg:top-20  lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 lg:ring-zinc-200  transition-all duration-300 z-50">
                                 <li class="px-2 lg:border-l">
                                     <a class="hover:bg-coffee hover:text-white p-3 rounded-xl transition-all duration-300 block"
                                         href="#">قهوه</a>
@@ -138,7 +149,8 @@
                         <li class="p-2 hover:bg-neutral-100 lg:hover:bg-transparent">
                             <a href="#">بلاگ تخصصی قهوه</a>
                         </li>
-                        <li class="reletive group p-2 lg:py-4 hover:bg-neutral-100 lg:hover:bg-transparent">
+                        <li id="contact-submenu"
+                            class="reletive group p-2 lg:py-4 hover:bg-neutral-100 lg:hover:bg-transparent">
                             <a class="flex items-start justify-between lg:justify-center" href="#">ارتباط با ما
                                 <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -146,8 +158,8 @@
                                         stroke-linejoin="round" />
                                 </svg>
                             </a>
-                            <ul
-                                class="font-normal text-zinc-500 opacity-0 invisible h-0 group-hover:opacity-100 group-hover:visible group-hover:h-auto group-hover:p-4 -mx-2 lg:h-auto lg:absolute lg:top-20 lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 ring-zinc-200 transition-all duration-300 z-50">
+                            <ul id="contact-submenu-open"
+                                class="font-normal text-zinc-500 opacity-0 invisible h-0 -mx-2 lg:h-auto lg:absolute lg:top-20 lg:mx-0 lg:shadow-primary lg:rounded-xl bg-white lg:ring-2 ring-zinc-200 transition-all duration-300 z-50">
                                 <li class="hover:bg-coffee hover:text-white p-2 rounded-xl transition-all duration-300">
                                     <a href="#">پیگیری سفارش</a>
                                 </li>
@@ -247,8 +259,8 @@
 
     <main>
         <section>
-            <div class="container px-40 mt-40">
-                <div class="columns-3 gap-8">
+            <div class="container md:px-40 mt-40">
+                <div class="columns-1 md:columns-2 xl:columns-3 gap-8">
                     <a href="#">
                         <div
                             class="bg-espresso bg-cover brightness-50 hover:brightness-100 transition-all duration-300 h-60 mb-8 flex flex-col items-center justify-center gap-2">
@@ -391,8 +403,8 @@
                             <span class="text-white text-3xl font-bold">کاپریو</span>
                         </div>
                     </a>
-                </div>
-                <div class="columns-3 gap-8">
+
+
                     <a href="#">
                         <div
                             class="bg-coffee-tools bg-cover brightness-50 hover:brightness-100 transition-all duration-300 h-60 mb-8 flex flex-col items-center justify-center gap-2">
@@ -511,8 +523,8 @@
                             <span class="text-white text-3xl font-bold">هورکا</span>
                         </div>
                     </a>
-                </div>
-                <div class="columns-3 gap-8">
+
+
                     <a href="#">
                         <div
                             class="bg-coffee-tools-2 bg-cover brightness-50 hover:brightness-100 transition-all duration-300 h-60 mb-8 flex flex-col items-center justify-center gap-2">
@@ -617,8 +629,7 @@
                             <span class="text-white text-3xl font-bold">هات چاکلت</span>
                         </div>
                     </a>
-                </div>
-                <div class="columns-3 gap-8">
+
                     <a href="#">
                         <div
                             class="bg-masala bg-cover brightness-50 hover:brightness-100 transition-all duration-300 h-60 mb-8 flex flex-col items-center justify-center gap-2">
@@ -864,32 +875,32 @@
         <section>
             <div class="container mt-40">
                 <h2 class="text-2xl font-bold text-center mb-8">محصولات پرفروش</h2>
-                <div class="columns-4 gap-8 mb-8">
+                <div class="md:columns-2 lg:columns-3 gap-8">
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/1-1.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
-                                <h3 class="text-lg font-bold">قهوه ترک لایت 250 گرمی</h3>
+                                <h3 class="text-lg xl:text-lg font-bold">قهوه ترک لایت 250 گرمی</h3>
                                 <p class="font-bold">200 هزار تومان</p>
                             </div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/هاوس-بین-scaled-800x800.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
-                                <h3 class="text-lg font-bold">قهوه هاوس بین 70% عربیکا 250 گرمی</h3>
+                                <h3 class="text-lg font-bold">قهوه هاوس بین عربیکا 250 گرمی</h3>
                                 <p class="font-bold">275 هزار تومان</p>
                             </div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/استرانگ-scaled-800x800.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
@@ -899,8 +910,8 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/1-1.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
@@ -909,11 +920,10 @@
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="columns-4 gap-8 mb-8">
+                
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/1-1.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
@@ -923,19 +933,19 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/هاوس-بین-scaled-800x800.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
-                                <h3 class="text-lg font-bold">قهوه هاوس بین 70% عربیکا 250 گرمی</h3>
+                                <h3 class="text-lg font-bold">قهوه هاوس بین عربیکا 250 گرمی</h3>
                                 <p class="font-bold">275 هزار تومان</p>
                             </div>
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/استرانگ-scaled-800x800.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
@@ -945,8 +955,8 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="shadow-md hover:shadow-product-shadow transition-all duration-300">
-                            <div class="h-80 overflow-hidden">
+                        <div class="mb-8 shadow-md hover:shadow-product-shadow transition-all duration-300">
+                            <div class="md:h-80 overflow-hidden">
                                 <img src="coffee-bg/1-1.jpg" alt="turkish-coffee">
                             </div>
                             <div class="text-center pb-4">
@@ -958,7 +968,7 @@
                 </div>
             </div>
         </section>
-        <section class="mt-32 relative h-72 overflow-hidden">
+        <section class="hidden md:block mt-32 relative h-72 overflow-hidden">
             <svg class="absolute top-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="#fff" fill-opacity="1"
                     d="M0,64L60,58.7C120,53,240,43,360,64C480,85,600,139,720,138.7C840,139,960,85,1080,64C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
@@ -974,18 +984,18 @@
         <section class="bg-[#0a0a0a] pb-40">
             <div class="container text-white py-12">
                 <h2 class="text-3xl font-bold text-center mb-8">دسترسی به شعب قهوه ریو</h2>
-                <div class="flex gap-8">
+                <div class="flex flex-wrap gap-8 md:flex-nowrap">
                     <div class="flex flex-col justify-center items-center gap-8">
                         <img src="coffee-bg/۴۱۴.jpg" alt="شعبه میرداماد">
-                        <span class="w-1/3 p-3 text-center text-bold bg-coffee">شعبه میرداماد</span>
+                        <span class="lg:w-1/3 p-3 text-center text-bold bg-coffee">شعبه میرداماد</span>
                     </div>
                     <div class="flex flex-col justify-center items-center gap-8">
                         <img src="coffee-bg/313.jpg" alt="شعبه استانبول">
-                        <span class="w-1/3 p-3 text-center text-bold bg-coffee">شعبه استانبول</span>
+                        <span class="lg:w-1/3 p-3 text-center text-bold bg-coffee">شعبه استانبول</span>
                     </div>
                     <div class="flex flex-col justify-center items-center gap-8">
                         <img src="coffee-bg/212.jpg" alt="شعبه گیشا">
-                        <span class="w-1/3 p-3 text-center text-bold bg-coffee">شعبه گیشا</span>
+                        <span class="lg:w-1/3 p-3 text-center text-bold bg-coffee">شعبه گیشا</span>
                     </div>
                 </div>
             </div>
@@ -993,7 +1003,8 @@
     </main>
 
     <footer>
-        <div class="bg-[rgb(51,51,51)] text-white text- font-bold flex justify-between items-start flex-wrap px-20 py-10">
+        <div
+            class="bg-[rgb(51,51,51)] text-white text- font-bold flex justify-between items-start flex-wrap px-20 py-10">
             <div class="basis-1/4 px-6">
                 <img src="coffee-bg/logo-Black.png" alt="logo">
                 <p class="my-6">
@@ -1002,7 +1013,8 @@
                     اولین برند پیشرو در صنعت قهوه در کشور ایران که از سال 1311، افتخار همراهی مشتریان خود را دارد.
                 </p>
                 <div class="flex gap-2">
-                    <a class="border-2 border-gray-400 rounded-full p-1.5 hover:border-purple-700 hover:bg-purple-700 transition-all" href="#">
+                    <a class="border-2 border-gray-400 rounded-full p-1.5 hover:border-purple-700 hover:bg-purple-700 transition-all"
+                        href="#">
                         <svg class="" width="25px" height="25px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1016,14 +1028,16 @@
                                 fill="#fff" />
                         </svg>
                     </a>
-                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-sky-600 hover:bg-sky-600 transition-all" href="#">
+                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-sky-600 hover:bg-sky-600 transition-all"
+                        href="#">
                         <svg fill="#fff" width="30px" height="30px" viewBox="0 0 32 32"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.919 24.94c-2.548 0-4.921-.747-6.919-2.032a9.049 9.049 0 0 0 6.681-1.867 4.512 4.512 0 0 1-4.215-3.137c.276.054.559.082.848.082.412 0 .812-.056 1.193-.156a4.519 4.519 0 0 1-3.622-4.425v-.059a4.478 4.478 0 0 0 2.042.564 4.507 4.507 0 0 1-2.008-3.758c0-.824.225-1.602.612-2.268a12.811 12.811 0 0 0 9.303 4.715 4.517 4.517 0 0 1 7.692-4.115 9.107 9.107 0 0 0 2.866-1.094 4.542 4.542 0 0 1-1.983 2.498 9.08 9.08 0 0 0 2.592-.71 9.283 9.283 0 0 1-2.252 2.337c.008.193.014.388.014.583-.001 5.962-4.542 12.843-12.844 12.842" />
                         </svg>
                     </a>
-                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-red-600 hover:bg-red-600 transition-all" href="#">
+                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-red-600 hover:bg-red-600 transition-all"
+                        href="#">
                         <svg width="30px" height="30px" viewBox="0 -0.5 25 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1031,7 +1045,8 @@
                                 fill="#fff" />
                         </svg>
                     </a>
-                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-sky-600 hover:bg-sky-600 transition-all" href="#">
+                    <a class="border-2 border-gray-400 rounded-full p-1 hover:border-sky-600 hover:bg-sky-600 transition-all"
+                        href="#">
                         <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1042,7 +1057,9 @@
                 </div>
             </div>
             <div class="basis-1/4 px-6">
-                <h3 class="text-lg font-bold mb-4 relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">آدرس شعب</h3>
+                <h3
+                    class="text-lg font-bold mb-4 relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">
+                    آدرس شعب</h3>
                 <p class="mb-4">
                     تهران، چهارراه استانبول، جنب پاساژ گلشن، پلاک 410
                 </p>
@@ -1054,7 +1071,8 @@
                 </p>
             </div>
             <div class="flex flex-col basis-1/4 px-6">
-                <h3 class="text-lg font-bold relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">
+                <h3
+                    class="text-lg font-bold relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">
                     لینک های مفید
                 </h3>
                 <a class=" block border-b border-gray-400 py-3" href="#">خرید قهوه ترک</a>
@@ -1062,7 +1080,8 @@
                 <a class="pt-3" href="#">خرید قهوه اسپرسو </a>
             </div>
             <div class="flex flex-col basis-1/4 px-6">
-                <h3 class="text-lg font-bold relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">
+                <h3
+                    class="text-lg font-bold relative after:absolute after:-bottom-2 after:right-0 after:w-1/5 after:h-px after:bg-gray-400">
                     خدمات مشتریان
                 </h3>
                 <a class=" block border-b border-gray-400 py-3" href="#">حریم خصوصی </a>
@@ -1096,7 +1115,7 @@
         })
 
     </script>
-
+    <script src="app.js"></script>
 </body>
 
 </html>
