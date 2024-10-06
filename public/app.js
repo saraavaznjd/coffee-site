@@ -20,15 +20,15 @@ const openSubmenu = submenu => {
 menuOpen.addEventListener('click',() => {
     menuOpen.classList.toggle('hidden')
     menuClose.classList.toggle('hidden')
-    menu.classList.toggle('-right-[400px]')
-    menu.classList.toggle('-right-0')
+    menu.classList.toggle('-right-[600px]')
+    menu.classList.toggle('right-0')
 })
 
 menuClose.addEventListener('click',() => {
     menuClose.classList.toggle('hidden')
     menuOpen.classList.toggle('hidden')
-    menu.classList.toggle('-right-[400px]')
-    menu.classList.toggle('-right-0')
+    menu.classList.toggle('-right-[600px]')
+    menu.classList.toggle('right-0')
     if(productSubmenuOpen.classList.contains('group-hover:h-auto')){
         openSubmenu(productSubmenuOpen)
     }else if(contactSubmenuOpen.classList.contains('group-hover:h-auto')){
