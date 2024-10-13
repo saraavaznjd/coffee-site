@@ -15,7 +15,7 @@
 
     <header>
         <div class="container">
-            <nav class="h-16 lg:h-28 flex justify-between items-center text-[#141414]">
+            <nav class="fixed right-0 h-16 w-full p-4 lg:h-28 lg:p-8 flex justify-between items-center bg-white text-[#141414] z-50">
                 <div class="flex gap-4 xl:gap-8 items-center">
                     <a href="#"><img class="w-14 xl:w-full" src="coffee-bg/logo-Black.png" alt="logo"></a>
                     <svg class="transition-all duration-300 lg:hidden" id="menu-open" fill="#000000" height="30px"
@@ -36,7 +36,7 @@
                         </g>
                     </svg>
                     <ul id="menu"
-                        class="flex flex-col absolute top-16 bottom-0 -right-[600px] w-1/2 h-full bg-white font-bold text-sm transition-all duration-300 z-50 lg:flex-row lg:static lg:w-full lg:h-auto lg:items-center lg:gap-2 xl:gap-6">
+                        class="flex flex-col fixed top-16 bottom-0 -right-[600px] overflow-y-scroll w-1/2 bg-white font-bold text-sm transition-all duration-300 z-50 lg:flex-row lg:static lg:w-full lg:h-auto lg:items-center lg:gap-2 xl:gap-6">
                         <li id="product-submenu"
                             class="reletive group p-2 hover:bg-neutral-100 lg:hover:bg-transparent lg:py-4">
                             <a class="flex justify-between items-center lg:justify-center" href="#">محصولات
@@ -231,7 +231,7 @@
                 </div>
             </nav>
         </div>
-        <div class="swiper swiper-1">
+        <div class="swiper swiper-1 pt-16 lg:pt-28">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper-slide_content">
