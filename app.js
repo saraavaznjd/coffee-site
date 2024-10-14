@@ -15,6 +15,7 @@ const openSubmenu = submenu => {
     submenu.classList.toggle('invisible')
     submenu.classList.toggle('group-hover:visible')
     submenu.classList.toggle('group-hover:p-4')
+    menu.classList.toggle('overflow-y-auto')
 }
 
 menuOpen.addEventListener('click',() => {
